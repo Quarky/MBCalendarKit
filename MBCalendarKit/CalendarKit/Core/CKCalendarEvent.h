@@ -26,7 +26,7 @@ NS_SWIFT_NAME(CalendarEvent)
 /**
  The title for the event.
  */
-@property (copy) NSString *title;
+@property (copy) NSAttributedString *title;
 
 
 /**
@@ -48,8 +48,8 @@ NS_SWIFT_NAME(CalendarEvent)
 
 // MARK: - Initializers
 
-+(CKCalendarEvent *)eventWithTitle:(NSString *)title andDate:(NSDate *)date andInfo:(NSDictionary *)info;
-+(CKCalendarEvent *)eventWithTitle:(NSString *)title andDate:(NSDate *)date andInfo:(NSDictionary *)info andColor:(UIColor *)color;
-+(CKCalendarEvent *)eventWithTitle:(NSString *)title andDate:(NSDate *)date andInfo:(NSDictionary *)info andImage:(NSData *)image;
++(CKCalendarEvent *)eventWithTitle:(NSAttributedString *)title andDate:(NSDate *)date andInfo:(NSDictionary *)info;
++(CKCalendarEvent *)eventWithTitle:(NSAttributedString *)title andDate:(NSDate *)date andInfo:(NSDictionary *)info andColor:(UIColor *)color;
++(CKCalendarEvent *)eventWithTitle:(NSAttributedString *)title andDate:(NSDate *)date andInfo:(NSDictionary *)info andImage:(NSData *)image;
 
 @end

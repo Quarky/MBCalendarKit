@@ -394,7 +394,7 @@
     
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
-    cell.textLabel.text = event.title;
+    cell.textLabel.attributedText = event.title;
     
     UIView *colorView = [[UIView alloc] initWithFrame:CGRectMake(3, 6, 20, 20)];
     CALayer *layer = [CALayer layer];
