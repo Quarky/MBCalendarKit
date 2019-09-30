@@ -31,6 +31,10 @@
     return event;
 }
 
+- (NSComparisonResult)compareDates:(CKCalendarEvent *)otherObject {
+    return [self.date compare:otherObject.date];
+}
+
 +(CKCalendarEvent *)eventWithTitle:(NSAttributedString *)title andDate:(NSDate *)date andInfo:(NSDictionary *)info andImage:(NSData *)image
 {
     CKCalendarEvent *event = [CKCalendarEvent new];
